@@ -5,17 +5,20 @@ if not vim.loop.fs_stat(lazypath) then
   vim.fn.system({ "git", "clone", "--filter=blob:none", "https://github.com/folke/lazy.nvim.git", "--branch=stable", lazypath })
 end
 vim.opt.rtp:prepend(vim.env.LAZY or lazypath)
+vim.g.mapleader = " "
 
 require("lazy").setup({
   spec = {
     -- add LazyVim and import its plugins
-    { "LazyVim/LazyVim", import = "lazyvim.plugins" },
+    -- { "LazyVim/LazyVim", import = "lazyvim.plugins" },
     -- import any extras modules here
-    { import = "lazyvim.plugins.extras.coding.yanky" },
-    { import = "lazyvim.plugins.extras.coding.copilot" },
-    { import = "lazyvim.plugins.extras.formatting.conform" },
-    { import = "lazyvim.plugins.extras.lang.python" },
+    -- { import = "lazyvim.plugins.extras.coding.yanky" },
+    -- { import = "lazyvim.plugins.extras.coding.copilot" },
+    -- { import = "lazyvim.plugins.extras.formatting.conform" },
+    -- { import = "lazyvim.plugins.extras.lang.python" },
     -- { import = "lazyvim.plugins.extras.ui.mini-animate" },
+    -- { "telescope.nvim" },
+    -- { "folke/tokyonight.nvim" },
     -- import/override with your plugins
     { import = "plugins" },
   },
@@ -46,3 +49,7 @@ require("lazy").setup({
     },
   },
 })
+
+require('config.options')
+
+vim.cmd[[colorscheme tokyonight]]
