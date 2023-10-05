@@ -1,0 +1,9 @@
+{
+  "coc.preferences.formatOnSave": true,
+  "eslint.autoFixOnSave": true,
+  "python.formatting.provider": "black",
+  "python.linting.enabled": true,
+  "python.linting.lintOnSave": true,
+  "python.linting.ruffEnabled": true,
+  "python.sortImports.path": "/home/eric/.local/bin/ruff"
+}

@@ -15,9 +15,10 @@ return {
       }
     },
     keys = {
-      { "<leader>:", "<cmd>Telescope command_history<cr>", desc = "Command History" },
-      { "<leader><space>", "<cmd>Telescope find_files<cr>", desc = "Find Files" },
-      { "<leader>/", "<cmd>Telescope live_grep<cr>", desc = "Live grep" },
+      { "<leader>:",       "<cmd>Telescope command_history<cr>", desc = "Command History" },
+      { "<leader><space>", "<cmd>Telescope find_files<cr>",      desc = "Find Files" },
+      { ";",               "<cmd>Telescope find_files<cr>",      desc = "Find Files" },
+      { "<leader>/",       "<cmd>Telescope live_grep<cr>",       desc = "Live grep" },
     },
     config = function()
       local builtin = require('telescope.builtin')
