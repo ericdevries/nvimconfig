@@ -2,8 +2,13 @@
   "coc.preferences.formatOnSave": true,
   "eslint.autoFixOnSave": true,
   "python.formatting.provider": "black",
+  "python.formatting.blackArgs": [
+    "--line-length",
+    "120"
+  ],
   "python.linting.enabled": true,
   "python.linting.lintOnSave": true,
   "python.linting.ruffEnabled": true,
-  "python.sortImports.path": "ruff"
+  "python.sortImports.path": "ruff",
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true
 }
