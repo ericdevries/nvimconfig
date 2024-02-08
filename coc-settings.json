@@ -10,5 +10,6 @@
   "python.linting.lintOnSave": true,
   "python.linting.ruffEnabled": true,
   "python.sortImports.path": "ruff",
-  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true,
+  "svelte.enable-ts-plugin": false
 }
