@@ -19,6 +19,7 @@ return {
       { "<leader><space>", "<cmd>Telescope find_files<cr>",      desc = "Find Files" },
       { ";",               "<cmd>Telescope find_files<cr>",      desc = "Find Files" },
       { "<leader>/",       "<cmd>Telescope live_grep<cr>",       desc = "Live grep" },
+      { "<leader>rr",      "<cmd>Telescope resume<cr>",       desc = "Telescope Resume" },
     },
     config = function()
       local builtin = require('telescope.builtin')

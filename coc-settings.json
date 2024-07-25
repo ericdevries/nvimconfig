@@ -1,7 +1,11 @@
 {
   "coc.preferences.formatOnSave": true,
   "eslint.autoFixOnSave": true,
-  "python.formatting.provider": "black",
+  "python.formatting.provider": "ruff",
+  "python.formatting.ruffArgs": [
+    "--line-length",
+    "120"
+  ],
   "python.formatting.blackArgs": [
     "--line-length",
     "120"
@@ -10,5 +14,6 @@
   "python.linting.lintOnSave": true,
   "python.linting.ruffEnabled": true,
   "python.sortImports.path": "ruff",
-  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true,
+  "svelte.enable-ts-plugin": true
 }
